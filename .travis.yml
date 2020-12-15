@@ -1,9 +1,8 @@
 sudo: false
-
 language: node_js
 arch:
-   - amd64
-   - ppc64le
+    - amd64
+    - ppc64le
 matrix:
   include:
     - node_js: '5'
@@ -11,4 +10,4 @@ matrix:
     - node_js: '12'
       env: NO_ESLINT=true
 
-script: "[[ $NO_ESLINT == true ]] && npm run test-12 || npm test"
+script: "[[ $NO_ESLINT == true ]] && npm run test-012 || npm test"
